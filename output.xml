@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-04-21T01:08:48.357762" rpa="false" schemaversion="5">
+<suite id="s1" name="Test" source="C:\Users\gustavo.rocha\OneDrive - Inmetrics\Desktop\Organo Teste\Test.robot">
+<test id="s1-t1" name="Abrir o navegador e acessar site do organo" line="10">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-04-21T01:08:48.735751" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:3000/'.</msg>
+<arg>url=http://localhost:3000/</arg>
+<arg>browser=Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-04-21T01:08:48.735493" elapsed="3.642517"/>
+</kw>
+<status status="PASS" start="2025-04-21T01:08:48.734051" elapsed="3.644628"/>
+</test>
+<status status="PASS" start="2025-04-21T01:08:48.360619" elapsed="4.019167"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Test" id="s1" pass="1" fail="0" skip="0">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
