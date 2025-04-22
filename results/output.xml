@@ -1,30 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-04-21T01:03:46.498277" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-04-21T21:21:22.436212" rpa="false" schemaversion="5">
 <suite id="s1" name="Organo Teste" source="C:\Users\gustavo.rocha\OneDrive - Inmetrics\Desktop\Organo Teste">
 <suite id="s1-s1" name="Test" source="C:\Users\gustavo.rocha\OneDrive - Inmetrics\Desktop\Organo Teste\Test.robot">
-<test id="s1-s1-t1" name="Abrir o navegador e acessar site do organo" line="10">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-04-21T01:03:51.717145" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:3000/'.</msg>
-<arg>browser=Chrome</arg>
-<arg>url=http://localhost:3000/</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-04-21T01:03:51.715700" elapsed="64.481752"/>
+<test id="s1-s1-t1" name="Preencher formulario" line="14">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-21T21:21:26.754596" level="INFO">Typing text 'Gustavo Rocha' into text field 'xpath=//input[@id="form-nome"] text'.</msg>
+<msg time="2025-04-21T21:21:26.755239" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2025-04-21T21:21:26.755650" level="FAIL">No browser is open.</msg>
+<arg>xpath=//input[@id="form-nome"] text</arg>
+<arg>Gustavo Rocha</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2025-04-21T21:21:26.753472" elapsed="0.154245">No browser is open.</status>
 </kw>
-<status status="PASS" start="2025-04-21T01:03:51.712332" elapsed="64.486810"/>
+<status status="FAIL" start="2025-04-21T21:21:26.750911" elapsed="0.157721">No browser is open.</status>
 </test>
-<status status="PASS" start="2025-04-21T01:03:46.766660" elapsed="69.437159"/>
+<status status="FAIL" start="2025-04-21T21:21:22.616198" elapsed="4.294663"/>
 </suite>
-<status status="PASS" start="2025-04-21T01:03:46.585598" elapsed="69.649261"/>
+<status status="FAIL" start="2025-04-21T21:21:22.458470" elapsed="4.455230"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Organo Teste" id="s1" pass="1" fail="0" skip="0">Organo Teste</stat>
-<stat name="Test" id="s1-s1" pass="1" fail="0" skip="0">Organo Teste.Test</stat>
+<stat name="Organo Teste" id="s1" pass="0" fail="1" skip="0">Organo Teste</stat>
+<stat name="Test" id="s1-s1" pass="0" fail="1" skip="0">Organo Teste.Test</stat>
 </suite>
 </statistics>
 <errors>
