@@ -1,22 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-04-21T21:21:22.436212" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-04-22T03:18:25.922247" rpa="false" schemaversion="5">
 <suite id="s1" name="Organo Teste" source="C:\Users\gustavo.rocha\OneDrive - Inmetrics\Desktop\Organo Teste">
-<suite id="s1-s1" name="Test" source="C:\Users\gustavo.rocha\OneDrive - Inmetrics\Desktop\Organo Teste\Test.robot">
-<test id="s1-s1-t1" name="Preencher formulario" line="14">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-04-21T21:21:26.754596" level="INFO">Typing text 'Gustavo Rocha' into text field 'xpath=//input[@id="form-nome"] text'.</msg>
-<msg time="2025-04-21T21:21:26.755239" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<msg time="2025-04-21T21:21:26.755650" level="FAIL">No browser is open.</msg>
-<arg>xpath=//input[@id="form-nome"] text</arg>
-<arg>Gustavo Rocha</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="FAIL" start="2025-04-21T21:21:26.753472" elapsed="0.154245">No browser is open.</status>
+<suite id="s1-s1" name="Test" source="C:\Users\gustavo.rocha\OneDrive - Inmetrics\Desktop\Organo Teste\Test">
+<suite id="s1-s1-s1" name="Preenchendo Formulario" source="C:\Users\gustavo.rocha\OneDrive - Inmetrics\Desktop\Organo Teste\Test\Preenchendo Formulario.robot">
+<test id="s1-s1-s1-t1" name="Verificar se acessar o site o card e criado corretamente na aréa correta." line="27">
+<kw name="Given que acesso o ORGANO">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-04-22T03:18:29.945304" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:3000/'.</msg>
+<msg time="2025-04-22T03:18:32.266531" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<arg>${URL}</arg>
+<arg>browser=Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2025-04-22T03:18:29.944692" elapsed="2.323243">Execution terminated by signal</status>
 </kw>
-<status status="FAIL" start="2025-04-21T21:21:26.750911" elapsed="0.157721">No browser is open.</status>
+<status status="FAIL" start="2025-04-22T03:18:29.943752" elapsed="2.324929">Execution terminated by signal</status>
+</kw>
+<kw name="When prencho os campos do formulario">
+<status status="NOT RUN" start="2025-04-22T03:18:32.269880" elapsed="0.000503"/>
+</kw>
+<kw name="And clico em criar card">
+<status status="NOT RUN" start="2025-04-22T03:18:32.271073" elapsed="0.000270"/>
+</kw>
+<kw name="Then o sistema criar o card na area correta">
+<status status="NOT RUN" start="2025-04-22T03:18:32.271863" elapsed="0.000253"/>
+</kw>
+<status status="FAIL" start="2025-04-22T03:18:29.941676" elapsed="2.331011">Execution terminated by signal</status>
 </test>
-<status status="FAIL" start="2025-04-21T21:21:22.616198" elapsed="4.294663"/>
+<status status="FAIL" start="2025-04-22T03:18:26.109888" elapsed="6.164974"/>
 </suite>
-<status status="FAIL" start="2025-04-21T21:21:22.458470" elapsed="4.455230"/>
+<status status="FAIL" start="2025-04-22T03:18:26.105102" elapsed="6.173309"/>
+</suite>
+<status status="FAIL" start="2025-04-22T03:18:25.947106" elapsed="6.333443"/>
 </suite>
 <statistics>
 <total>
@@ -27,6 +41,7 @@
 <suite>
 <stat name="Organo Teste" id="s1" pass="0" fail="1" skip="0">Organo Teste</stat>
 <stat name="Test" id="s1-s1" pass="0" fail="1" skip="0">Organo Teste.Test</stat>
+<stat name="Preenchendo Formulario" id="s1-s1-s1" pass="0" fail="1" skip="0">Organo Teste.Test.Preenchendo Formulario</stat>
 </suite>
 </statistics>
 <errors>

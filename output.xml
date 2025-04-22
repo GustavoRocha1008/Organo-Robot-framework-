@@ -1,77 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-04-22T01:07:10.097910" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-04-22T01:49:16.744277" rpa="false" schemaversion="5">
 <suite id="s1" name="Test" source="C:\Users\gustavo.rocha\OneDrive - Inmetrics\Desktop\Organo Teste\Test.robot">
-<test id="s1-t1" name="Abrir o navegador e acessar site do organo" line="10">
+<test id="s1-t1" name="Abrir o navegador e acessar site do organo" line="25">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-04-22T01:07:13.309580" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:3000/'.</msg>
+<msg time="2025-04-22T01:49:21.546462" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:3000/'.</msg>
 <arg>url=http://localhost:3000/</arg>
 <arg>browser=Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-04-22T01:07:13.306575" elapsed="10.096417"/>
+<status status="PASS" start="2025-04-22T01:49:21.545610" elapsed="5.153730"/>
 </kw>
-<status status="PASS" start="2025-04-22T01:07:13.305055" elapsed="10.099227"/>
+<status status="PASS" start="2025-04-22T01:49:21.543612" elapsed="5.156296"/>
 </test>
-<test id="s1-t2" name="Preencher formulario" line="14">
+<test id="s1-t2" name="Preencher formulario" line="29">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-04-22T01:07:23.407439" level="INFO">Typing text 'Gustavo Rocha' into text field 'id:form-nome'.</msg>
-<arg>id:form-nome</arg>
+<msg time="2025-04-22T01:49:26.702455" level="INFO">Typing text 'Gustavo Rocha' into text field 'id:form-nome'.</msg>
+<arg>${CAMPO_NOME}</arg>
 <arg>Gustavo Rocha</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-04-22T01:07:23.406521" elapsed="0.320666"/>
+<status status="PASS" start="2025-04-22T01:49:26.701518" elapsed="0.372922"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-04-22T01:07:23.729696" level="INFO">Typing text 'analista de sistema' into text field 'id:form-cargo'.</msg>
-<arg>id:form-cargo</arg>
+<msg time="2025-04-22T01:49:27.075866" level="INFO">Typing text 'analista de sistema' into text field 'id:form-cargo'.</msg>
+<arg>${CAMPO_CARGO}</arg>
 <arg>analista de sistema</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-04-22T01:07:23.729102" elapsed="0.329900"/>
+<status status="PASS" start="2025-04-22T01:49:27.075180" elapsed="0.306926"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-04-22T01:07:24.060665" level="INFO">Typing text 'https://picsum.photos/id/1/200/300' into text field 'id:form-imagem'.</msg>
-<arg>id:form-imagem</arg>
+<msg time="2025-04-22T01:49:27.384036" level="INFO">Typing text 'https://picsum.photos/id/1/200/300' into text field 'id:form-imagem'.</msg>
+<arg>${CAMPO_IMAGEM}</arg>
 <arg>https://picsum.photos/id/1/200/300</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-04-22T01:07:24.059984" elapsed="0.254929"/>
+<status status="PASS" start="2025-04-22T01:49:27.383323" elapsed="0.337870"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-04-22T01:07:24.315993" level="INFO">Clicking element 'class:lista-suspensa'.</msg>
-<arg>class:lista-suspensa</arg>
+<msg time="2025-04-22T01:49:27.723920" level="INFO">Clicking element 'class:lista-suspensa'.</msg>
+<arg>${CAMPO_TIME}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-04-22T01:07:24.315574" elapsed="0.234984"/>
+<status status="PASS" start="2025-04-22T01:49:27.723142" elapsed="0.227655"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-04-22T01:07:24.552071" level="INFO">Clicking element '//option[contains(.,'Programação')]'.</msg>
-<arg>//option[contains(.,'Programação')]</arg>
+<msg time="2025-04-22T01:49:27.952907" level="INFO">Clicking element '//option[contains(.,'Data Science')]'.</msg>
+<arg>${OPCAO_DADOS}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-04-22T01:07:24.551523" elapsed="0.083661"/>
+<status status="PASS" start="2025-04-22T01:49:27.952410" elapsed="0.110194"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-04-22T01:07:34.639542" level="INFO">Slept 10 seconds.</msg>
+<msg time="2025-04-22T01:49:38.064505" level="INFO">Slept 10 seconds.</msg>
 <arg>10s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-04-22T01:07:24.635739" elapsed="10.004308"/>
+<status status="PASS" start="2025-04-22T01:49:28.063291" elapsed="10.001515"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-04-22T01:07:34.642220" level="INFO">Clicking element 'id=form-botao'.</msg>
-<arg>id=form-botao</arg>
+<msg time="2025-04-22T01:49:38.066401" level="INFO">Clicking element 'id:form-botao'.</msg>
+<arg>${BOTAO_CARD}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-04-22T01:07:34.641432" elapsed="0.157956"/>
+<status status="PASS" start="2025-04-22T01:49:38.065699" elapsed="0.153518"/>
 </kw>
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2025-04-22T01:07:34.949560" level="INFO">Element 'class:colaborador' is displayed.</msg>
+<msg time="2025-04-22T01:49:38.422439" level="INFO">Element 'class:colaborador' is displayed.</msg>
 <arg>class:colaborador</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2025-04-22T01:07:34.800151" elapsed="0.149553"/>
+<status status="PASS" start="2025-04-22T01:49:38.220120" elapsed="0.202513"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-04-22T01:07:39.951587" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-04-22T01:49:43.424923" level="INFO">Slept 5 seconds.</msg>
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-04-22T01:07:34.950393" elapsed="5.001624"/>
+<status status="PASS" start="2025-04-22T01:49:38.423621" elapsed="5.001637"/>
 </kw>
-<status status="PASS" start="2025-04-22T01:07:23.405306" elapsed="16.548931"/>
+<status status="PASS" start="2025-04-22T01:49:26.700686" elapsed="16.725773"/>
 </test>
-<status status="PASS" start="2025-04-22T01:07:10.100369" elapsed="29.857434"/>
+<status status="PASS" start="2025-04-22T01:49:16.747762" elapsed="26.680237"/>
 </suite>
 <statistics>
 <total>
